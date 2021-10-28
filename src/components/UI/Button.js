@@ -6,6 +6,7 @@ const Button = (props) => {
     <button
       className={styles.button}
       type={props.type || 'button'}
+      data-testid={props['data-testid']}
       onClick={props.onClick}
     >
       {props.children}
